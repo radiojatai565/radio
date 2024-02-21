@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Websites no Wayback Archive</title>
+</head>
+<body>
+    <h1>Cadastro de Websites no Wayback Archive</h1>
+    <p>Preencha o seguinte formulário para cadastrar um website no Wayback Archive:</p>
+    <form action="https://archive.org/submit" method="post">
+        <label for="url">URL do Website:</label>
+        <input type="text" id="url" name="url" size="50" required>
+        <br>
+        <label for="data">Data e Hora (opcional):</label>
+        <input type="datetime-local" id="data" name="data">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p>**Observações:**</p>
+    <ul>
+        <li>A data e hora são opcionais. Se não forem preenchidas, o website será capturado no momento em que o formulário for enviado.</li>
+        <li>O Wayback Archive pode levar algum tempo para capturar o website. Você pode verificar o status da captura em https://archive.org/web/.</li>
+    </ul>
+</body>
+</html>
