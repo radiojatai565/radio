@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Sites para Wayback Machine</title>
+</head>
+<body>
+  <h1>Cadastro de Sites para Wayback Machine</h1>
+  <p>Preencha o formulário abaixo para cadastrar um site para a Wayback Machine.</p>
+  <form action="https://archive.org/web/" method="post">
+    <label for="url">URL do site:</label>
+    <input type="text" id="url" name="url" placeholder="http://, https://, pnm://, rtsp:// ou mms://" required>
+    <br>
+    <label for="datahora">Data e hora (opcional):</label>
+    <input type="datetime-local" id="datahora" name="datahora">
+    <br>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
